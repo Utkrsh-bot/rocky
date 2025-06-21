@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple DOM example</title>
+    <style>
+  .highlight {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+  }
+</style>
+
+  </head>
+  <body>
+    <section>
+      <img
+        src="dinosaur.png"
+        alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth." />
+      <p>
+        Here we will add a link to the
+        <a href="dinosaur.png">Mozilla homepage</a>
+      </p>
+    </section>
+     <button onclick="alert('Hello-World')" id="btn1">Button 1</button>
+     <button id="btn2">Button 2</button>
+     <button id="btn3">Button 3</button>
+    <script>
+        const link = document.querySelector("a");
+        link.textContent = "sigma link";
+        link.href = "https://www.linkedin.com/in/utkrsh17";
+
+        const sect = document.querySelector("section");
+
+        const para = document.createElement("p");
+        para.textContent = "We hope you enjoyed the ride.";
+        sect.appendChild(para);
+
+        const text = document.createTextNode(
+  " — the premier source for web development knowledge.",
+);
+        const linkPara = document.querySelector("p");
+linkPara.appendChild(text);
+
+        sect.appendChild(linkPara);
+
+        para.setAttribute("class", "highlight");
+
+        //button
+        const btn = document.querySelector('#btn2');
+        btn.onclick = () => alert('hello man');
+
+        const btn3 = document.querySelector('#btn3');
+        btn3.addEventListener("click", ()=> {
+            alert("i am sigma");
+        });
+        
+
+
+
+    </script>
+  </body>
+</html>
