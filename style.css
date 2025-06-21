@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(136, 241, 124);
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+#resetBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.grid-square {
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+}
